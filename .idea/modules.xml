@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OneIdeaADay-master.iml" filepath="$PROJECT_DIR$/OneIdeaADay-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OneIdeaADay.iml" filepath="$PROJECT_DIR$/OneIdeaADay.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/libraries/android-support-v4-preferencefragment-master/android-support-v4-preferencefragment-master.iml" filepath="$PROJECT_DIR$/test/libraries/android-support-v4-preferencefragment-master/android-support-v4-preferencefragment-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/libraries/libraries.iml" filepath="$PROJECT_DIR$/test/libraries/libraries.iml" />
@@ -10,4 +10,3 @@
     </modules>
   </component>
 </project>
-

@@ -35,7 +35,7 @@ public class Chargement extends ActionBarActivity {
 
             @Override
             public void onFinish() {
-                Intent newfrom = new Intent(Chargement.this, MyActivity.class);
+                Intent newfrom = new Intent(Chargement.this, Presentation.class);
                 startActivity(newfrom);
                 finish();
 

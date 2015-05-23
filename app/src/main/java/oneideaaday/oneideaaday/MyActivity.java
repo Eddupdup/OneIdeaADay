@@ -199,7 +199,11 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void showAlert (View view) {
-        new AlertDialog.Builder(this).setTitle("Remettre à zéro").setMessage("Etes-vous bien sûr de vouloir tout remettre à zéro ?").setNeutralButton("Oui", null)
+        new AlertDialog.Builder(this)
+                .setTitle("Remettre à zéro")
+                .setMessage("Etes-vous bien sûr de vouloir tout remettre à zéro ?")
+                .setPositiveButton("Oui", null)
+                .setNegativeButton("Non",null)
                 .show();
 
     }

@@ -17,16 +17,22 @@ import android.widget.Button;
 
 public class Fact_2 extends Fragment {
 
+    private boolean xpdelivered = false;
     View rootview;
 
     @Nullable
     //@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.fact_2, container, false);
+        final boolean xpdelivered = ((Myapp) this.getActivity().getApplication()).getfact2delivered();
         Button button = (Button) rootview.findViewById(R.id.button1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (xpdelivered==false) {
+                    ((Myapp) getActivity().getApplication()).addxp(40);
+                    ((Myapp) getActivity().getApplication()).setfact2delivered(true);
+                }
                 Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse(lien));
                 startActivity(browse);
                 browse.setData(Uri.parse(lien));

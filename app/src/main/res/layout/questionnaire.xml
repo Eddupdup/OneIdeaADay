@@ -16,7 +16,7 @@
     <Button
         android:layout_width="151dp"
         android:layout_height="wrap_content"
-        android:text="Pass"
+        android:text="Skip"
         android:id="@+id/button2"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"

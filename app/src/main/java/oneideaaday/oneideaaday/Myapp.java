@@ -9,6 +9,9 @@ public class Myapp extends Application {
 
     private int xp;
     private boolean alreadyConnected = false;
+    private boolean xpfact1delivered = false;
+    private boolean xpfact2delivered = false;
+    private boolean xpfact3delivered = false;
 
     public int getXp() {
         return xp;
@@ -36,7 +39,36 @@ public class Myapp extends Application {
         return this.alreadyConnected;
     }
 
+    //Fact 1
 
+    public boolean setfact1delivered (boolean xpfact1delivered) {
+        this.xpfact1delivered = xpfact1delivered;
+        return this.xpfact1delivered;
+    }
 
+    public boolean getfact1delivered () {
+        return xpfact1delivered;
+    }
 
+    //Fact 2
+
+    public boolean setfact2delivered (boolean xpfact2delivered) {
+        this.xpfact2delivered = xpfact2delivered;
+        return this.xpfact2delivered;
+    }
+
+    public boolean getfact2delivered () {
+        return xpfact2delivered;
+    }
+
+    //Fact 3
+
+    public boolean setfact3delivered (boolean xpfact3delivered) {
+        this.xpfact3delivered = xpfact3delivered;
+        return this.xpfact3delivered;
+    }
+
+    public boolean getfact3delivered () {
+        return xpfact3delivered;
+    }
 }

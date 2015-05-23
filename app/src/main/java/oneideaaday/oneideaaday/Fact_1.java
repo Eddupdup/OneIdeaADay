@@ -30,9 +30,14 @@ public class Fact_1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.fact_1, container, false);
         Button button = (Button) rootview.findViewById(R.id.button1);
+        final boolean xpdelivered = ((Myapp) this.getActivity().getApplication()).getfact1delivered();
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (xpdelivered==false) {
+                    ((Myapp) getActivity().getApplication()).addxp(40);
+                    ((Myapp) getActivity().getApplication()).setfact1delivered(true);
+                }
                 Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse(lien));
                 startActivity(browse);
                 browse.setData(Uri.parse(lien));

@@ -1,10 +1,8 @@
 package oneideaaday.oneideaaday;
 
-import android.app.Application;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,12 +21,8 @@ public class Profil extends Fragment {
 
         TextView xp = (TextView) rootview.findViewById(R.id.xp);
         int Xp = ((Myapp) this.getActivity().getApplication()).getXp();
-        xp.setText("You have "+ Xp + "xp");
+        xp.setText("You have "+ Xp + " Xp");
 
         return rootview;
     }
-
-
-
-
 }

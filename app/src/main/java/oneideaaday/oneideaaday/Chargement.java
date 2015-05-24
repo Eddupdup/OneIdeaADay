@@ -35,10 +35,17 @@ public class Chargement extends ActionBarActivity {
 
             @Override
             public void onFinish() {
-                Intent newfrom = new Intent(Chargement.this, Presentation.class);
-                startActivity(newfrom);
-                finish();
-
+                boolean used =((Myapp) getApplication()).getUsed();
+                if (used==false) {
+                    Intent intent = new Intent(Chargement.this, Presentation.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else {
+                    Intent intent = new Intent(Chargement.this,MyActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         }.start();
     }

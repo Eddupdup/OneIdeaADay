@@ -2,6 +2,8 @@ package oneideaaday.oneideaaday;
 
 import android.app.Application;
 
+import java.util.ArrayList;
+
 /**
  * Created by GER Telecom on 23/05/2015.
  */
@@ -12,6 +14,9 @@ public class Myapp extends Application {
     private boolean xpfact1delivered = false;
     private boolean xpfact2delivered = false;
     private boolean xpfact3delivered = false;
+    private boolean used = false;
+    private boolean Notifications = true;
+    private ArrayList<String> favoris ;
 
     public int getXp() {
         return xp;
@@ -70,5 +75,41 @@ public class Myapp extends Application {
 
     public boolean getfact3delivered () {
         return xpfact3delivered;
+    }
+
+    public boolean getUsed() {
+        return used;
+    }
+
+    public void setUsed(boolean used) {
+        this.used = used;
+    }
+
+    public boolean getNotifications() {
+        return Notifications;
+    }
+
+    public void setNotifications(boolean notifications) {
+        Notifications = notifications;
+    }
+
+    public ArrayList<String> getFavoris() {
+        return favoris;
+    }
+
+    public void setFavoris(ArrayList<String> favoris) {
+        this.favoris = favoris;
+    }
+
+    public void addFavoris (java.lang.String string) {
+        favoris.add(string);
+    }
+
+    public void clearFavoris () {
+        favoris.clear();
+    }
+
+    public void deleteFavoris (int i) {
+        favoris.remove(i);
     }
 }

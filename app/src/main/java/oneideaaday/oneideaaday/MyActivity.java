@@ -1,9 +1,7 @@
 package oneideaaday.oneideaaday;
 
 import android.app.AlertDialog;
-import android.app.FragmentManager;
-import android.content.Intent;
-import android.net.Uri;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -199,13 +197,40 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void showAlert (View view) {
-        new AlertDialog.Builder(this)
+        AlertDialog alertDialogBuilder = new AlertDialog.Builder(this)
                 .setTitle("Remettre à zéro")
+                .setCancelable(true)
                 .setMessage("Etes-vous bien sûr de vouloir tout remettre à zéro ?")
-                .setPositiveButton("Oui", null)
+                .setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        ((Myapp) getApplication()).setzero();
+                        ((Myapp) getApplication()).setfact1delivered(false);
+                        ((Myapp) getApplication()).setfact2delivered(false);
+                        ((Myapp) getApplication()).setfact3delivered(false);
+                        ((Myapp) getApplication()).clearFavoris();
+                    }
+                })
                 .setNegativeButton("Non",null)
                 .show();
 
+    }
+
+    public void ActiveNotif (View view) {
+        final boolean notif = ((Myapp) getApplication()).getNotifications();
+        final AlertDialog.Builder alertDialog = new AlertDialog.Builder(this)
+                .setTitle("Réglages")
+                .setNeutralButton("Ok",null);
+        if (notif==true) {
+            ((Myapp) getApplication()).setNotifications(false);
+            alertDialog.setMessage("Notifications désactivées")
+                    .show();
+        }
+        else {
+            ((Myapp) getApplication()).setNotifications(true);
+            alertDialog.setMessage("Notifications activées")
+                    .show();
+        }
     }
 
 }

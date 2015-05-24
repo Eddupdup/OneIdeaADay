@@ -1,19 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+              android:weightSum="1">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:layout_marginTop="59dp"
-        android:text="Profil"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:text="My Profil"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="204dp"
+            android:layout_height="fill_parent"
+            android:text="@string/username"
+            android:inputType="text"
+            android:background="#DDDDDD"
+            android:autoText="true"
+            android:textSize="25sp"
+            android:gravity="center_vertical"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            />
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:onClick="changeUserName"
+            />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="200sp"
+        />
 
     <TextView
         android:id="@+id/xp"
@@ -23,10 +77,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp"
         android:text="A mettre a jour"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="bottom|center_horizontal"/>
 
-
-
-
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.50"
+        android:indeterminate="false"/>
 
 </LinearLayout>

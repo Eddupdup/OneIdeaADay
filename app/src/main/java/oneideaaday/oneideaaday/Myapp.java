@@ -9,6 +9,7 @@ import java.util.ArrayList;
  */
 public class Myapp extends Application {
 
+    private String userName = "userName" ;
     private int xp;
     private boolean alreadyConnected = false;
     private boolean xpfact1delivered = false;
@@ -111,5 +112,13 @@ public class Myapp extends Application {
 
     public void deleteFavoris (int i) {
         favoris.remove(i);
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }

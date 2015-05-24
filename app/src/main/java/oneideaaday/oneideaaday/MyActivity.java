@@ -13,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 
 //import android.support.v4.app.FragmentActivity;
 ;
@@ -208,7 +210,8 @@ public class MyActivity extends ActionBarActivity
                         ((Myapp) getApplication()).setfact1delivered(false);
                         ((Myapp) getApplication()).setfact2delivered(false);
                         ((Myapp) getApplication()).setfact3delivered(false);
-                        ((Myapp) getApplication()).clearFavoris();
+                        //((Myapp) getApplication()).clearFavoris();
+                        ((Myapp) getApplication()).setUserName("userName");
                     }
                 })
                 .setNegativeButton("Non",null)
@@ -220,7 +223,7 @@ public class MyActivity extends ActionBarActivity
         final boolean notif = ((Myapp) getApplication()).getNotifications();
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(this)
                 .setTitle("Réglages")
-                .setNeutralButton("Ok",null);
+                .setNeutralButton("Ok", null);
         if (notif==true) {
             ((Myapp) getApplication()).setNotifications(false);
             alertDialog.setMessage("Notifications désactivées")
@@ -231,6 +234,27 @@ public class MyActivity extends ActionBarActivity
             alertDialog.setMessage("Notifications activées")
                     .show();
         }
+    }
+
+    public void changeUserName (View view) {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+        alertDialog.setTitle("Username")
+                .setMessage("Enter your new Username");
+        final TextView textView = (TextView) findViewById(R.id.username);
+
+        final EditText input = new EditText(this);
+        alertDialog.setView(input);
+
+        alertDialog.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                ((Myapp) getApplication()).setUserName(input.getText().toString());
+                textView.setText(input.getText().toString());
+
+            }
+        })
+                .setNegativeButton("Cancel",null)
+                .show();
     }
 
 }

@@ -6,6 +6,7 @@ package oneideaaday.oneideaaday;
  */
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -22,22 +23,29 @@ public class Fact_1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        final SharedPreferences pref = getActivity().getPreferences(0);
+        final SharedPreferences.Editor editor = pref.edit();
         rootview = inflater.inflate(R.layout.fact_1, container, false);
         final Button button = (Button) rootview.findViewById(R.id.button1);
-        final Button buttonfav = (Button) rootview.findViewById(R.id.buttonfav);
+        //final Button buttonfav = (Button) rootview.findViewById(R.id.buttonfav);
         button.setClickable(true);
-        final boolean xpdelivered = ((Myapp) this.getActivity().getApplication()).getfact1delivered();
+        final boolean xpdelivered = pref.getBoolean("fact1delivered",false);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (xpdelivered==false) {
-                    ((Myapp) getActivity().getApplication()).addxp(40);
-                    int xp = ((Myapp)getActivity().getApplication()).getXp();
-                    int xpmax = ((Myapp)getActivity().getApplication()).getXpmax();
+                    int xp = pref.getInt("xp",0);
+                    //((Myapp) getActivity().getApplication()).addxp(40);
+                    editor.putInt("xp",xp+40)
+                            .apply();
+                    xp = pref.getInt("xp",40);
+                    int xpmax = pref.getInt("xpMax",80);
                     if (((MyActivity)getActivity()).canlevelUp(xp,xpmax)){
                         ((MyActivity)getActivity()).leveledup();
                     }
-                    ((Myapp) getActivity().getApplication()).setfact1delivered(true);
+                    //((Myapp) getActivity().getApplication()).setfact1delivered(true);
+                    editor.putBoolean("fact1delivered",true)
+                            .apply();
                     button.setClickable(false);
                 }
                 Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse(lien));
@@ -47,12 +55,12 @@ public class Fact_1 extends Fragment {
             }
         });
 
-        buttonfav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ((Myapp) getActivity().getApplication()).addFavoris(getString(R.string.title_fact_1));
-            }
-        });
+        //buttonfav.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View view) {
+        //        ((Myapp) getActivity().getApplication()).addFavoris(getString(R.string.title_fact_1));
+        //    }
+        //});
 
         return rootview;
     }

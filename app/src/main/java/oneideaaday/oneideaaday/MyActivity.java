@@ -210,6 +210,8 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void showAlert (View view) {
+        final SharedPreferences pref = getPreferences(0);
+        final SharedPreferences.Editor editor = pref.edit();
         AlertDialog alertDialogBuilder = new AlertDialog.Builder(this)
                 .setTitle("Remettre à zéro")
                 .setCancelable(true)
@@ -217,13 +219,20 @@ public class MyActivity extends ActionBarActivity
                 .setPositiveButton("Oui", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        ((Myapp) getApplication()).setzero();
-                        ((Myapp) getApplication()).setfact1delivered(false);
-                        ((Myapp) getApplication()).setfact2delivered(false);
-                        ((Myapp) getApplication()).setfact3delivered(false);
+                        //((Myapp) getApplication()).setzero();
+                        editor.putInt("xp", 0);
+                        //((Myapp) getApplication()).setfact1delivered(false);
+                        editor.putBoolean("fact1delivered", false);
+                        //((Myapp) getApplication()).setfact2delivered(false);
+                        editor.putBoolean("fact2delivered", false);
+                        //((Myapp) getApplication()).setfact3delivered(false);
+                        editor.putBoolean("fact3delivered", false);
                         //((Myapp) getApplication()).clearFavoris();
-                        ((Myapp) getApplication()).setUserName("userName");
-                        ((Myapp) getApplication()).setLevel(1);
+                        //((Myapp) getApplication()).setUserName("userName");
+                        editor.putString("userName", "Username");
+                        //((Myapp) getApplication()).setLevel(1);
+                        editor.putInt("level", 1);
+                        editor.apply();
                     }
                 })
                 .setNegativeButton("Non", null)
@@ -232,17 +241,23 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void ActiveNotif (View view) {
-        final boolean notif = ((Myapp) getApplication()).getNotifications();
+        final SharedPreferences pref = getPreferences(0);
+        final SharedPreferences.Editor editor = pref.edit();
+        final boolean notif = pref.getBoolean("notifications",true);
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(this)
                 .setTitle("Réglages")
                 .setNeutralButton("Ok", null);
         if (notif==true) {
-            ((Myapp) getApplication()).setNotifications(false);
+            //((Myapp) getApplication()).setNotifications(false);
+            editor.putBoolean("notifications",false)
+                    .apply();
             alertDialog.setMessage("Notifications désactivées")
                     .show();
         }
         else {
-            ((Myapp) getApplication()).setNotifications(true);
+            //((Myapp) getApplication()).setNotifications(true);
+            editor.putBoolean("notifications",true)
+                    .apply();
             alertDialog.setMessage("Notifications activées")
                     .show();
         }
@@ -282,13 +297,20 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void leveledup () {
+        final SharedPreferences pref = getPreferences(0);
+        SharedPreferences.Editor editor = pref.edit();
         final AlertDialog.Builder alertdialog = new AlertDialog.Builder(this);
         //int xp = ((Myapp) getApplication()).getXp();
         //int xpmax = ((Myapp) getApplication()).getXpmax();
-        ((Myapp) getApplication()).addLevel(1);
-        int level = ((Myapp) getApplication()).getLevel();
+        //((Myapp) getApplication()).addLevel(1);
+        int level = pref.getInt("level",1);
+        editor.putInt("level",level+1);
+        int xpmax = pref.getInt("xpMax",80);
+        editor.putInt("xpMax",xpmax+80);
+        editor.apply();
+        int Level = pref.getInt("level",1);
             alertdialog.setTitle("Level Up")
-                    .setMessage("Congrats, you're now level " + level) // +" "+ xp+" " + xpmax)
+                    .setMessage("Congrats, you're now level " + Level) // +" "+ xp+" " + xpmax)
                     .setNeutralButton("Ok", null)
                     .show();
     }

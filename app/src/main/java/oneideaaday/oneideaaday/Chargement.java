@@ -44,7 +44,8 @@ public class Chargement extends ActionBarActivity {
 
             @Override
             public void onFinish() {
-                boolean used =((Myapp) getApplication()).getUsed();
+                final SharedPreferences pref = getPreferences(0);
+                boolean used =pref.getBoolean("used",false);
                 if (used==false) {
                     Intent intent = new Intent(Chargement.this, Presentation.class);
                     startActivity(intent);

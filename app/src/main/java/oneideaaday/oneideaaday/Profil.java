@@ -23,17 +23,23 @@ public class Profil extends Fragment {
 
         //String username =((Myapp) getActivity().getApplication()).getUserName();
         SharedPreferences pref = getActivity().getPreferences(0);
+        SharedPreferences.Editor editor = pref.edit();
         String userName = pref.getString("userName","Username");
         TextView textView = (TextView) rootview.findViewById(R.id.username);
         textView.setText(userName);
 
         TextView xp = (TextView) rootview.findViewById(R.id.xp);
-        int Xp = ((Myapp) this.getActivity().getApplication()).getXp();
-        int xpMax = ((Myapp) this.getActivity().getApplication()).getXpmax();
+        //int Xp = ((Myapp) this.getActivity().getApplication()).getXp();
+        int Xp = pref.getInt("xp", 0);
+        //int xpMax = ((Myapp) this.getActivity().getApplication()).getXpmax();
+        int xpMax = pref.getInt("xpMax",80);
 
         if (Xp>xpMax) {
             int levelup = mod(Xp - xpMax,80)+1;
-            ((Myapp) this.getActivity().getApplication()).addLevel(levelup);
+            int level = pref.getInt("level",1);
+            editor.putInt("level",level+1)
+                    .apply();
+            //((Myapp) this.getActivity().getApplication()).addLevel(levelup);
             //((Myapp) this.getActivity().getApplication()).addXpmax(levelup*80);
         }
 

@@ -1,8 +1,11 @@
 package oneideaaday.oneideaaday;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
@@ -17,7 +20,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 //import android.support.v4.app.FragmentActivity;
-;
+;import java.util.ArrayList;
 
 
 public class MyActivity extends ActionBarActivity
@@ -27,6 +30,8 @@ public class MyActivity extends ActionBarActivity
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
+    //public static final String PREF = "Mypref";
+    Context context;
 
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
@@ -39,15 +44,21 @@ public class MyActivity extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
-
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        SharedPreferences pref = getPreferences(0);
+        String userName = pref.getString("userName","Username");
+
+    }
+
+    public void onDestroy() {
+        super.onDestroy();
 
     }
 
@@ -215,7 +226,7 @@ public class MyActivity extends ActionBarActivity
                         ((Myapp) getApplication()).setLevel(1);
                     }
                 })
-                .setNegativeButton("Non",null)
+                .setNegativeButton("Non", null)
                 .show();
 
     }
@@ -238,6 +249,8 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void changeUserName (View view) {
+        SharedPreferences pref = getPreferences(0);
+        final SharedPreferences.Editor editor = pref.edit();
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
         alertDialog.setTitle("Username")
                 .setMessage("Enter your new Username");
@@ -249,7 +262,9 @@ public class MyActivity extends ActionBarActivity
         alertDialog.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                ((Myapp) getApplication()).setUserName(input.getText().toString());
+                editor.putString("userName",input.getText().toString());
+                editor.apply();
+                //((Myapp) getApplication()).setUserName(input.getText().toString());
                 textView.setText(input.getText().toString());
 
             }
@@ -274,7 +289,9 @@ public class MyActivity extends ActionBarActivity
         int level = ((Myapp) getApplication()).getLevel();
             alertdialog.setTitle("Level Up")
                     .setMessage("Congrats, you're now level " + level) // +" "+ xp+" " + xpmax)
-                    .setNeutralButton("Ok",null)
+                    .setNeutralButton("Ok", null)
                     .show();
     }
+
+
 }

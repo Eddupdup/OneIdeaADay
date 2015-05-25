@@ -1,5 +1,6 @@
 package oneideaaday.oneideaaday;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -20,9 +21,11 @@ public class Profil extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.profil, container, false);
 
-        String username =((Myapp) getActivity().getApplication()).getUserName();
+        //String username =((Myapp) getActivity().getApplication()).getUserName();
+        SharedPreferences pref = getActivity().getPreferences(0);
+        String userName = pref.getString("userName","Username");
         TextView textView = (TextView) rootview.findViewById(R.id.username);
-        textView.setText(username);
+        textView.setText(userName);
 
         TextView xp = (TextView) rootview.findViewById(R.id.xp);
         int Xp = ((Myapp) this.getActivity().getApplication()).getXp();

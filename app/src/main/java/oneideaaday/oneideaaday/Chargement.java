@@ -1,8 +1,10 @@
 package oneideaaday.oneideaaday;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +25,13 @@ public class Chargement extends ActionBarActivity {
         MyBar = (ProgressBar) findViewById(R.id.MyBar);
         MyBar.setMax(max_progress());
         beginanimate();
+    }
+
+    public void onStart() {
+        super.onStart();
+
+        //((Myapp)getApplication()).setFavoris(settings.getStringSet("favoris",((Myapp)getApplication()).getFavoris()));
+
     }
 
     public void beginanimate() {

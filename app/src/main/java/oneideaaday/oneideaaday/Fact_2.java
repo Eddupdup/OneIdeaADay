@@ -23,7 +23,7 @@ public class Fact_2 extends Fragment {
     //@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.fact_2, container, false);
-        final SharedPreferences pref = getActivity().getPreferences(0);
+        final SharedPreferences pref = getActivity().getSharedPreferences("PREF",0);
         final SharedPreferences.Editor editor = pref.edit();
         final boolean xpdelivered = pref.getBoolean("xpdelivered",false);
         final Button button = (Button) rootview.findViewById(R.id.button1);

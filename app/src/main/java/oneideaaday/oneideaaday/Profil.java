@@ -22,7 +22,7 @@ public class Profil extends Fragment {
         rootview = inflater.inflate(R.layout.profil, container, false);
 
         //String username =((Myapp) getActivity().getApplication()).getUserName();
-        SharedPreferences pref = getActivity().getPreferences(0);
+        SharedPreferences pref = getActivity().getSharedPreferences("PREF",0);
         SharedPreferences.Editor editor = pref.edit();
         String userName = pref.getString("userName","Username");
         TextView textView = (TextView) rootview.findViewById(R.id.username);

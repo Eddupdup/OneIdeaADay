@@ -52,7 +52,7 @@ public class MyActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
-        SharedPreferences pref = getPreferences(0);
+        SharedPreferences pref = getSharedPreferences("PREF",0);
         String userName = pref.getString("userName","Username");
 
     }
@@ -210,7 +210,7 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void showAlert (View view) {
-        final SharedPreferences pref = getPreferences(0);
+        final SharedPreferences pref = getSharedPreferences("PREF",0);
         final SharedPreferences.Editor editor = pref.edit();
         AlertDialog alertDialogBuilder = new AlertDialog.Builder(this)
                 .setTitle("Remettre à zéro")
@@ -232,6 +232,8 @@ public class MyActivity extends ActionBarActivity
                         editor.putString("userName", "Username");
                         //((Myapp) getApplication()).setLevel(1);
                         editor.putInt("level", 1);
+                        editor.putBoolean("used",false);
+                        editor.putInt("xpMax",80);
                         editor.apply();
                     }
                 })
@@ -241,7 +243,7 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void ActiveNotif (View view) {
-        final SharedPreferences pref = getPreferences(0);
+        final SharedPreferences pref = getSharedPreferences("PREF",0);
         final SharedPreferences.Editor editor = pref.edit();
         final boolean notif = pref.getBoolean("notifications",true);
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(this)
@@ -264,7 +266,7 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void changeUserName (View view) {
-        SharedPreferences pref = getPreferences(0);
+        SharedPreferences pref = getSharedPreferences("PREF",0);
         final SharedPreferences.Editor editor = pref.edit();
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
         alertDialog.setTitle("Username")
@@ -297,7 +299,7 @@ public class MyActivity extends ActionBarActivity
     }
 
     public void leveledup () {
-        final SharedPreferences pref = getPreferences(0);
+        final SharedPreferences pref = getSharedPreferences("PREF",0);
         SharedPreferences.Editor editor = pref.edit();
         final AlertDialog.Builder alertdialog = new AlertDialog.Builder(this);
         //int xp = ((Myapp) getApplication()).getXp();

@@ -24,7 +24,7 @@ public class Fact_3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.fact_3, container, false);
 
-        final SharedPreferences  pref = getActivity().getPreferences(0);
+        final SharedPreferences  pref = getActivity().getSharedPreferences("PREF",0);
         final SharedPreferences.Editor editor = pref.edit();
         //final boolean xpdelivered = ((Myapp) this.getActivity().getApplication()).getfact3delivered();
         final boolean xpdelivered = pref.getBoolean("fact3delivered",false);

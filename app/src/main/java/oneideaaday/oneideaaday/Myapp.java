@@ -10,7 +10,9 @@ import java.util.ArrayList;
 public class Myapp extends Application {
 
     private String userName = "userName" ;
-    private int xp;
+    private int xp = 0;
+    private int level = 1;
+    private int xpmax = level*80;
     private boolean alreadyConnected = false;
     private boolean xpfact1delivered = false;
     private boolean xpfact2delivered = false;
@@ -120,5 +122,44 @@ public class Myapp extends Application {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+        xpmax = 80*level;
+    }
+
+    public void addLevel (int level) {
+        this.level = this.level + level;
+        xpmax = xpmax + level*80;
+    }
+
+    public int levelis() {
+        level = mod (xp,80);
+        return level;
+    }
+
+    public int getXpmax() {
+        return xpmax;
+    }
+
+    public void setXpmax(int xpmax) {
+        this.xpmax = xpmax;
+    }
+
+    public void addXpmax(int xp ) {
+        this.xpmax = this.xpmax + xp;
+    }
+
+    private int mod(int x, int y)
+    {
+        int result = x % y;
+        if (result < 0)
+            result += y;
+        return result;
     }
 }

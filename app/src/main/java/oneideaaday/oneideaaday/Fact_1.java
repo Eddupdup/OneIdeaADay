@@ -32,12 +32,18 @@ public class Fact_1 extends Fragment {
             public void onClick(View v) {
                 if (xpdelivered==false) {
                     ((Myapp) getActivity().getApplication()).addxp(40);
+                    int xp = ((Myapp)getActivity().getApplication()).getXp();
+                    int xpmax = ((Myapp)getActivity().getApplication()).getXpmax();
+                    if (((MyActivity)getActivity()).canlevelUp(xp,xpmax)){
+                        ((MyActivity)getActivity()).leveledup();
+                    }
                     ((Myapp) getActivity().getApplication()).setfact1delivered(true);
                     button.setClickable(false);
                 }
                 Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse(lien));
                 startActivity(browse);
                 browse.setData(Uri.parse(lien));
+
             }
         });
 

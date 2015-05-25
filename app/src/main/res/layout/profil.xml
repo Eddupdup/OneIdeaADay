@@ -8,14 +8,17 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="235dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_gravity="center"
         android:layout_marginTop="59dp"
         android:text="My Profil"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        />
+        android:textSize="40sp"
+        android:background="#dddddd"
+        android:layout_weight="0.16"
+        android:gravity="center_vertical|center_horizontal" />
 
     <View
         android:layout_width="fill_parent"
@@ -67,7 +70,7 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="200sp"
-        />
+        android:layout_weight="0.34" />
 
     <TextView
         android:id="@+id/xp"
@@ -76,7 +79,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp"
-        android:text="A mettre a jour"
+        android:text="Points d&apos;Expérience : 0/80"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_gravity="bottom|center_horizontal"/>
 
@@ -85,8 +88,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/progressBar"
-        android:layout_gravity="center_horizontal"
         android:layout_weight="0.50"
-        android:indeterminate="false"/>
+        android:indeterminate="false"
+        android:maxWidth="40dp"
+        android:minWidth="20dp"
+        android:progressTint="#42b06b" />
+
 
 </LinearLayout>

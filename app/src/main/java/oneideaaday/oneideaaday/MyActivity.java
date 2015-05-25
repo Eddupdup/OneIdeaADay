@@ -212,6 +212,7 @@ public class MyActivity extends ActionBarActivity
                         ((Myapp) getApplication()).setfact3delivered(false);
                         //((Myapp) getApplication()).clearFavoris();
                         ((Myapp) getApplication()).setUserName("userName");
+                        ((Myapp) getApplication()).setLevel(1);
                     }
                 })
                 .setNegativeButton("Non",null)
@@ -257,4 +258,23 @@ public class MyActivity extends ActionBarActivity
                 .show();
     }
 
+    public boolean canlevelUp (int xp,int xpmax) {
+        if (xp==xpmax) {
+            //((Myapp) getApplication()).addLevel(1);
+            return true;
+        }
+        else return false;
+    }
+
+    public void leveledup () {
+        final AlertDialog.Builder alertdialog = new AlertDialog.Builder(this);
+        //int xp = ((Myapp) getApplication()).getXp();
+        //int xpmax = ((Myapp) getApplication()).getXpmax();
+        ((Myapp) getApplication()).addLevel(1);
+        int level = ((Myapp) getApplication()).getLevel();
+            alertdialog.setTitle("Level Up")
+                    .setMessage("Congrats, you're now level " + level) // +" "+ xp+" " + xpmax)
+                    .setNeutralButton("Ok",null)
+                    .show();
+    }
 }

@@ -38,14 +38,20 @@ public class Fact_3 extends Fragment {
             public void onClick(View v) {
                 if (xpdelivered==false) {
                     ((Myapp) getActivity().getApplication()).addxp(40);
+                    int xp = ((Myapp)getActivity().getApplication()).getXp();
+                    int xpmax = ((Myapp)getActivity().getApplication()).getXpmax();
                     ((Myapp) getActivity().getApplication()).setfact3delivered(true);
                     button.setImageResource(R.drawable.realise);
                     button.setClickable(false);
                     int xpactuel = ((Myapp) getActivity().getApplication()).getXp();
-                    alertDialog.setMessage("Vous avez désormais " + xpactuel + " Points d'expérience");
-                    alertDialog.show();
+                    if (((MyActivity)getActivity()).canlevelUp(xpactuel,xpmax)) {
+                        ((MyActivity)getActivity()).leveledup();
+                    }
+                    else {
+                        alertDialog.setMessage("Vous avez désormais " + xpactuel + " Points d'expérience");
+                        alertDialog.show();
+                    }
                 }
-
 
             }
         });

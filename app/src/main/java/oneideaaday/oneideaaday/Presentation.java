@@ -1,7 +1,9 @@
 package oneideaaday.oneideaaday;
 
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -11,7 +13,7 @@ import android.view.View;
  */
 public class Presentation extends Activity {
 
-    @Override
+     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.presentation);

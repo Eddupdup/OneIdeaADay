@@ -244,7 +244,7 @@ public class MyActivity extends ActionBarActivity
     public void ActiveNotif (View view) {
         final SharedPreferences pref = getSharedPreferences("PREF",0);
         final SharedPreferences.Editor editor = pref.edit();
-        final boolean notif = pref.getBoolean("notifications",true);
+        final boolean notif = pref.getBoolean("notifications", true);
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(this)
                 .setTitle("Réglages")
                 .setNeutralButton("Ok", null);
@@ -316,5 +316,12 @@ public class MyActivity extends ActionBarActivity
                     .show();
     }
 
+    public void changerTitreFact() {
+
+        String nouveauTitre = "test";
+        TextView textView = (TextView) this.findViewById(R.id.textView10);
+        textView.setText(nouveauTitre);
+
+    }
 
 }

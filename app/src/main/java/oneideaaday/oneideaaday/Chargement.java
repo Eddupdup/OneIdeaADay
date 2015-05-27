@@ -10,13 +10,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ProgressBar;
 
-
 public class Chargement extends ActionBarActivity {
 
     public static final int seconde = 5;
     public static final int milseconde = seconde * 1000;
     public static final int delay = 2;
     private ProgressBar MyBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class Chargement extends ActionBarActivity {
             public void onTick(long millisUntilFinished) {
                 MyBar.setProgress(establish_progess(millisUntilFinished));
             }
+
 
             @Override
             public void onFinish() {

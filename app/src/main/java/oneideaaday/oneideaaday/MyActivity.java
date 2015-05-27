@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
@@ -20,7 +19,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 //import android.support.v4.app.FragmentActivity;
-;import java.util.ArrayList;
+;
 
 
 public class MyActivity extends ActionBarActivity
@@ -291,7 +290,7 @@ public class MyActivity extends ActionBarActivity
     }
 
     public boolean canlevelUp (int xp,int xpmax) {
-        if (xp==xpmax) {
+        if (xp>=xpmax) {
             //((Myapp) getApplication()).addLevel(1);
             return true;
         }

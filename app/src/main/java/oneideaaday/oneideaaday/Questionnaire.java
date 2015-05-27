@@ -1,14 +1,16 @@
 package oneideaaday.oneideaaday;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 
 
 /**
@@ -23,6 +25,11 @@ public class Questionnaire extends Activity {
         setContentView(R.layout.questionnaire);
     }
 
+    public void onRestart () {
+        super.onRestart();
+        setContentView(R.layout.questionnaire);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -30,16 +37,109 @@ public class Questionnaire extends Activity {
     }
 
     public void sendMessage (View view) {
+        RadioGroup group2 = (RadioGroup) findViewById(R.id.group2);
+        RadioGroup group4 = (RadioGroup) findViewById(R.id.groupe4);
+        RadioGroup group5 = (RadioGroup) findViewById(R.id.groupe5);
+        RadioGroup group6 = (RadioGroup) findViewById(R.id.groupe6);
+        CheckBox check1 = (CheckBox) findViewById(R.id.quest3answ1);
+        CheckBox check3 = (CheckBox) findViewById(R.id.quest3answ3);
+        CheckBox check4 = (CheckBox) findViewById(R.id.quest3answ4);
+        int selected2 = group2.getCheckedRadioButtonId();
+        int selected4 = group4.getCheckedRadioButtonId();
+        int selected5 = group5.getCheckedRadioButtonId();
+        int selected6 = group6.getCheckedRadioButtonId();
+        //RadioButton answer2 = (RadioButton) findViewById(selected2);
         SharedPreferences pref = getSharedPreferences("PREF",0);
         SharedPreferences.Editor editor = pref.edit();
+        int xp = pref.getInt("xp",0);
+        int xpmax = pref.getInt("xpMax",80);
         EditText editUser = (EditText) findViewById(R.id.enteruser);
         String userName = editUser.getText().toString();
+
         editor.putString("userName",userName)
                 .apply();
-        Intent intent = new Intent(this, MyActivity.class);
-        startActivity(intent);
-        editor.putBoolean("used",true)
+        if (selected2==R.id.quest2answ1) {
+            editor.putInt("xp",xp+30)
+                    .apply();
+        }
+        xp = pref.getInt("xp",0);
+        if (selected4==R.id.quest4answ3) {
+            editor.putInt("xp",xp+30)
+                    .apply();
+        }
+        xp = pref.getInt("xp",0);
+        if (selected5==R.id.quest5answ2) {
+            editor.putInt("xp",xp+30)
+                    .apply();
+        }
+        xp = pref.getInt("xp",0);
+        if (selected6==R.id.quest6answ3) {
+            editor.putInt("xp",xp+30)
+                    .apply();
+        }
+        xp = pref.getInt("xp",0);
+        if ((check1.isChecked())&&(check3.isChecked())&&(check4.isChecked())) {
+            editor.putInt("xp", xp + 40);
+        }
+        else {
+            if (check1.isChecked()) {
+                editor.putInt("xp",xp+10)
+                        .apply();
+            }
+            if (check3.isChecked()) {
+                editor.putInt("xp",xp+10)
+                        .apply();
+            }
+            if (check4.isChecked()) {
+                editor.putInt("xp",xp+10)
+                        .apply();
+            }
+        }
+        xp = pref.getInt("xp",0);
+        if (canlevelUp(xp,xpmax)) {
+            leveledup();
+        }
+
+
+    }
+
+    public boolean canlevelUp (int xp,int xpmax) {
+        if (xp>=xpmax) {
+            //((Myapp) getApplication()).addLevel(1);
+            return true;
+        }
+        else return false;
+    }
+
+    public void leveledup () {
+        final SharedPreferences pref = getSharedPreferences("PREF",0);
+        final SharedPreferences.Editor editor = pref.edit();
+        final AlertDialog.Builder alertdialog = new AlertDialog.Builder(this);
+        final Intent intent = new Intent(this,MyActivity.class);
+        //int xp = ((Myapp) getApplication()).getXp();
+        //int xpmax = ((Myapp) getApplication()).getXpmax();
+        //((Myapp) getApplication()).addLevel(1);
+        int level = pref.getInt("level",1);
+        int xp = pref.getInt("xp",0);
+        int xpMax = pref.getInt("xpMax",80);
+        double difXp = (double) (xp-xpMax)/80;
+        int defLevel = (int) (Math.floor(difXp) +1);
+        editor.putInt("level",level+defLevel)
+                .putInt("xpMax",xpMax+80*defLevel)
                 .apply();
+        int Level = pref.getInt("level",1);
+        alertdialog.setTitle("Level Up")
+                .setMessage("Congrats, you're now level " + Level) // +" "+ xp+" " + xpmax)
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        startActivity(intent);
+                        editor.putBoolean("used",true)
+                                .apply();
+                        finish();
+                    }
+                })
+                .show();
     }
 
 

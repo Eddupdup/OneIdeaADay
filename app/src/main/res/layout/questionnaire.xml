@@ -40,7 +40,7 @@
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:text="Votre username :"
+                android:text="Votre Identifiant :"
                 android:inputType="text"
                 android:background="#DDDDDD"
                 android:autoText="true"
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Comment avez vous decouvert cette application ?"
+                android:text="Comment avez vous découvert cette application ?"
                 android:background="#dddddd"
                 android:layout_marginTop="20dp" />
 
@@ -89,7 +89,7 @@
                     <RadioButton
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Bouche a oreille"
+                        android:text="Bouche à oreille"
                         android:id="@+id/quest1answ1"
                         android:layout_marginTop="3dp" />
 
@@ -104,7 +104,7 @@
                     <RadioButton
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Site specialise"
+                        android:text="Site spécialisé"
                         android:id="@+id/quest1answ3" />
 
 
@@ -133,25 +133,25 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Quel est selon vous la définition du Developpement Durable ?"
+                    android:id="@+id/textView13"
+                    android:background="#dddddd"
+                    android:layout_weight="149"
+                    android:layout_marginTop="5dp" />
+
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/group2">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="Quel est selon vous la definition du Developpement Durable ?"
-                        android:id="@+id/textView13"
-                        android:background="#dddddd"
-                        android:layout_weight="149"
-                        android:layout_marginTop="5dp" />
-
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Developpement qui repond aux besoins du present sans compromettre la capacite des generations futurs a repondre aux leurs"
+                        android:text="Developpement qui répond aux besoins du présent sans compromettre la capacité des générations futurs à répondre aux leurs"
                         android:id="@+id/quest2answ1"
                         android:layout_weight="149"
                         android:layout_below="@+id/linearLayout"
@@ -162,7 +162,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Developpement des technologies visants a preserver l&apos;ecologie de notre environnement"
+                        android:text="Developpement des technologies visants à préserver l&apos;écologie de notre environnement"
                         android:id="@+id/quest2answ2"
                         android:checked="false"
                         android:layout_alignBaseline="@+id/quest2answ1"
@@ -204,8 +204,7 @@
                 android:text="Philosophique"
                 android:id="@+id/quest3answ2"
                 android:checked="false"
-                android:layout_marginTop="5dp"
-                android:clickable="false" />
+                android:layout_marginTop="5dp" />
 
             <CheckBox
                 android:layout_width="fill_parent"

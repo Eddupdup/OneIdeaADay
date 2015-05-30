@@ -18,11 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Presentation"/>
         <activity android:name=".Questionnaire"/>
         <activity
             android:name=".Accueil"
             android:label="@string/title_activity_accueil" />
+        <activity android:name=".Resultats"/>
         <activity
             android:name=".MyActivity"
             android:label="@string/title_activity_my" />

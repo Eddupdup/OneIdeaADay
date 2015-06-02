@@ -2,7 +2,6 @@ package oneideaaday.oneideaaday;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -109,6 +108,8 @@ public class Questionnaire extends Activity {
         }
         xp = pref.getInt("xp",0);
         leveledup(answers);
+        editor.putBoolean("used", true)
+                .apply();;
 
 
     }
@@ -128,7 +129,6 @@ public class Questionnaire extends Activity {
     }
 
     public void leveledup (int[] answer) {
-        final Fragment fragment = null;
         final SharedPreferences pref = getSharedPreferences("PREF", 0);
         final SharedPreferences.Editor editor = pref.edit();
         final AlertDialog.Builder alertdialog = new AlertDialog.Builder(this);
@@ -155,8 +155,6 @@ public class Questionnaire extends Activity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         startActivity(intent);
-                        editor.putBoolean("used", true)
-                               .apply();
                         finish();
                     }
                 })

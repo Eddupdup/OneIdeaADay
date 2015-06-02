@@ -137,15 +137,15 @@
             android:layout_marginTop="5dp" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
             android:text="Suivant"
             android:id="@+id/button"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:background="#9be466"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="30sp"
+            android:background="#89c95a"
             android:clickable="true"
-            android:onClick="onclickButton"/>
+            android:onClick="onclickButton" />
 
     </LinearLayout>
 

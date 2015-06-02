@@ -1,22 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
-        android:text="Favoris"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listFav"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentEnd="true" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:text="Crédits"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Florian CARINGI"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil LinkedIn"
+            android:id="@+id/button3"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:autoLink="web"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Mikael BOSTANCI"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/button3"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil LinkedIn"
+            android:id="@+id/button4"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:autoLink="web"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Aubin MERMET"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_below="@+id/button4"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil LinkedIn"
+            android:id="@+id/button5"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:autoLink="web"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Edouard DUPONT"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:layout_below="@+id/button5"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil LinkedIn"
+            android:id="@+id/button6"
+            android:layout_below="@+id/editText4"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:autoLink="web"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Pierre-Luigi FORT"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:layout_below="@+id/button6"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil LinkedIn"
+            android:id="@+id/button7"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:autoLink="web"/>
+
+
+    </RelativeLayout>
+    </ScrollView>

@@ -57,18 +57,7 @@
             android:autoLink="web"
             />
 
-        <Button
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:text="Ajouter aux Favoris"
-            android:id="@+id/buttonfav"
-            android:layout_gravity="right"
-            android:layout_weight="0.05"
-            android:textAlignment="center"
-            android:clickable="true"
-            android:linksClickable="true"
-            android:autoLink="web"
-            />
+
 
     </LinearLayout>
     <!--Apres un appui sur le bouton on lance un intent browser-->

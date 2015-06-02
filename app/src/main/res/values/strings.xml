@@ -10,8 +10,8 @@
     <string name="title_activity_my">MyActivity</string>
 
     <string name="title_section1">Profil</string>
-    <string name="title_section2">Reglages</string>
-    <string name="title_section3">Favoris</string>
+    <string name="title_section2">Réglages</string>
+    <string name="title_section3">Crédits</string>
     <string name="title_section4">Fact 1</string>
     <string name="title_section5">Fact 2</string>
     <string name="title_section6">Fact 3</string>

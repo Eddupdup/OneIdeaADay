@@ -83,18 +83,21 @@ public class MyActivity extends ActionBarActivity
                 objFragment = new Fact_3();
                 break;
             case 3:
+                objFragment = new Fact_4();
+                break;
+            case 4:
                 //Intent intent4 = new Intent(this,Favoris.class);
                 //startActivity(intent4);
                 objFragment = new Profil();
                 break;
 
-            case 4:
+            case 5:
                 //android.app.FragmentManager fragmentManager = getFragmentManager();
                 //Intent intent6 = new Intent(this,SettingsActivity.class);
                 //startActivity(intent6);
                 objFragment = new Settings();
                 break;
-            case 5:
+            case 6:
                 //Intent intent5 = new Intent(this,Profil.class);
                 //startActivity(intent5);
                 objFragment = new Favoris();

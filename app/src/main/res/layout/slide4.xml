@@ -23,7 +23,8 @@
         android:textSize="30sp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="20sp"
-        android:gravity="center_vertical" />
+        android:gravity="center_vertical"
+        android:layout_weight="0.39" />
 
     <LinearLayout
         android:orientation="horizontal"

@@ -49,9 +49,9 @@ public class Presentation extends FragmentActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new Slide1();
-                case 1:
                     return new Slide2();
+                case 1:
+                    return new Slide1();
                 case 2:
                     return new Slide3();
             }

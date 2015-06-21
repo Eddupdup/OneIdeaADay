@@ -16,28 +16,13 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="53sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Switch
+        android:layout_width="284dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Notifications"
-        android:id="@+id/textView11"
-        android:layout_below="@+id/textView2"
-        android:layout_alignEnd="@+id/checkBox"
-        android:gravity="center_vertical|center_horizontal"
-        android:layout_margin="20sp" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Activer"
-        android:id="@+id/checkBox"
-        android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:onClick="ActiveNotif"
+        android:text="Notifications   "
+        android:id="@+id/switch1"
         android:checked="true"
-        android:gravity="center_vertical|center_horizontal"
-        android:layout_margin="5sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"

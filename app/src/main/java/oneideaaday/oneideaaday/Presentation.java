@@ -13,7 +13,7 @@ import android.support.v4.view.ViewPager;
  */
 public class Presentation extends FragmentActivity {
 
-    private static final int NUM_PAGES = 3; // number of pages displayed
+    private static final int NUM_PAGES = 4; // number of pages displayed
     private ViewPager mPager; //PAGER WIDGET
     private PagerAdapter mPagerAdapter; // the page adapter
 

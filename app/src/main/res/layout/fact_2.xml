@@ -43,7 +43,9 @@
             android:layout_margin="20sp"
             android:adjustViewBounds="true"
             android:baselineAlignBottom="false"
-            android:cropToPadding="false" />
+            android:cropToPadding="false"
+            android:padding="3dp"
+            android:background="#000000" />
 
         <Button
             android:layout_width="238dp"

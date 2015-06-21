@@ -44,7 +44,9 @@
         android:src="@drawable/tesla_powerwall"
         android:layout_margin="20sp"
         android:cropToPadding="false"
-        android:adjustViewBounds="true" />
+        android:adjustViewBounds="true"
+        android:padding="3dp"
+        android:background="#000000" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

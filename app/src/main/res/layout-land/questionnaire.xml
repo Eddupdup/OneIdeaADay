@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:text="Questionnaire"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="top|center"
+            android:gravity="top"
+            android:textSize="35sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_margin="30sp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20sp"
+            android:id="@+id/view41"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Votre Identifiant :"
+                android:inputType="text"
+                android:background="#DDDDDD"
+                android:autoText="true"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/enteruser"
+                android:singleLine="true"
+                android:elegantTextHeight="false"
+                android:autoText="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="150"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Comment avez vous découvert cette application ?"
+                android:background="#dddddd"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="149"
+                    android:id="@+id/group1"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bouche à oreille"
+                        android:id="@+id/quest1answ1"
+                        android:layout_marginTop="3dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Play Store"
+                        android:id="@+id/quest1answ2"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Site spécialisé"
+                        android:id="@+id/quest1answ3" />
+
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5sp
+                "
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="150"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+
+            <LinearLayout
+                android:layout_width="323dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Quel est selon vous la définition du Developpement Durable ?"
+                    android:id="@+id/textView13"
+                    android:background="#dddddd"
+                    android:layout_marginTop="5dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/group2"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Developpement qui répond aux besoins du présent sans compromettre la capacité des générations futurs à répondre aux leurs"
+                        android:id="@+id/quest2answ1"
+                        android:layout_weight="149"
+                        android:layout_below="@+id/linearLayout"
+                        android:layout_alignParentStart="true"
+                        android:checked="false"
+                        android:layout_marginTop="5dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Developpement des technologies visants à préserver l&apos;écologie de notre environnement"
+                        android:id="@+id/quest2answ2"
+                        android:checked="false"
+                        android:layout_alignBaseline="@+id/quest2answ1"
+                        android:layout_alignBottom="@+id/quest2answ1"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Quels sont les pilliers du Developpement Durable ?"
+                android:id="@+id/textView14"
+                android:background="#dddddd"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Ecologique"
+                android:id="@+id/quest3answ1"
+                android:checked="false"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Philosophique"
+                android:id="@+id/quest3answ2"
+                android:checked="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Social"
+                android:id="@+id/quest3answ3"
+                android:checked="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Economique"
+                android:id="@+id/quest3answ4"
+                android:checked="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Selon vous, quel est la quantité de déchets en France par an et par habitant ?"
+                android:id="@+id/textView15"
+                android:background="#dddddd"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/groupe4"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 tonne"
+                    android:id="@+id/quest4answ1"
+                    android:checked="false"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9,5 tonnes"
+                    android:id="@+id/quest4answ2"
+                    android:checked="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13,8 tonnes"
+                    android:id="@+id/quest4answ3"
+                    android:checked="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Quel est le pourcentage de femmes au Conseil d&apos;Administration dans les PME ?"
+                android:id="@+id/textView16"
+                android:background="#dddddd"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/groupe5"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 %"
+                    android:id="@+id/quest5answ1"
+                    android:checked="false"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40 %"
+                    android:id="@+id/quest5answ2"
+                    android:checked="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="55 %"
+                    android:id="@+id/quest5answ3"
+                    android:checked="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Quelle est la part de la production nucléaire dans l&apos;énergie française ?"
+                android:id="@+id/textView17"
+                android:background="#dddddd"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/groupe6"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40 %"
+                    android:id="@+id/quest6answ1"
+                    android:checked="false"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="63 %"
+                    android:id="@+id/quest6answ2"
+                    android:checked="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="77 %"
+                    android:id="@+id/quest6answ3"
+                    android:checked="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="sendMessage"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_margin="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

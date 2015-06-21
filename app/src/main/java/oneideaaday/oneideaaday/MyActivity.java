@@ -114,13 +114,13 @@ public class MyActivity extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_section4);
+                mTitle = getString(R.string.title_fact_1);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section5);
+                mTitle = getString(R.string.title_fact_2);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section6);
+                mTitle = getString(R.string.title_fact_3);
                 break;
             case 4:
                 mTitle = getString(R.string.title_section1);

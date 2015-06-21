@@ -12,13 +12,13 @@
     <string name="title_section1">Profil</string>
     <string name="title_section2">Réglages</string>
     <string name="title_section3">Crédits</string>
-    <string name="title_section4">Fact 1</string>
-    <string name="title_section5">Fact 2</string>
-    <string name="title_section6">Fact 3</string>
 
-    <string name="title_fact_1">Titre du Fact 1</string>
-    <string name="title_fact_2">Titre du Fact 2</string>
-    <string name="title_fact_3">Titre du Fact 3</string>
+<!-- Titre des facts -->
+
+    <string name="title_fact_1">Powerwall par Tesla</string>
+    <string name="title_fact_2">Un clavier en braille</string>
+    <string name="title_fact_3">L\&apos;eau ça coule</string>
+    <string name="title_fact_4">Transport à la voile</string>
 
     <string name="username">Username</string>
 
@@ -29,8 +29,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_menu">Menu</string>
 
-    <string name="slide1">Ceci est un test 11</string>
-    <string name="Slidetext">Testtesttest 1</string>
 
 
 

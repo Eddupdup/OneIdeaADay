@@ -54,6 +54,8 @@ public class Presentation extends FragmentActivity {
                     return new Slide1();
                 case 2:
                     return new Slide3();
+                case 3:
+                    return new Slide4();
             }
             return null;
         }

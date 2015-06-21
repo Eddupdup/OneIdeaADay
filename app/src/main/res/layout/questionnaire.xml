@@ -22,11 +22,16 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_gravity="top|center"
             android:gravity="top"
-            android:textSize="35sp"/>
+            android:textSize="35sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_margin="30sp" />
         <View
             android:layout_width="fill_parent"
             android:layout_height="20sp"
-            android:id="@+id/view41" />
+            android:id="@+id/view41"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp" />
 
 
 
@@ -34,7 +39,9 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
 
             <TextView
                 android:id="@+id/username"
@@ -45,14 +52,18 @@
                 android:background="#DDDDDD"
                 android:autoText="true"
                 android:textSize="20sp"
-                android:gravity="center_vertical"/>
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/enteruser"
                 android:singleLine="true"
                 android:elegantTextHeight="false"
-                android:autoText="true"/>
+                android:autoText="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
 
         </LinearLayout>
@@ -64,7 +75,9 @@
             android:weightSum="150"
             android:layout_below="@+id/textView2"
             android:layout_alignParentStart="true"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
 
 
             <TextView
@@ -73,18 +86,24 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Comment avez vous découvert cette application ?"
                 android:background="#dddddd"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
 
                 <RadioGroup
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="149"
-                    android:id="@+id/group1">
+                    android:id="@+id/group1"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp">
 
                     <RadioButton
                         android:layout_width="fill_parent"
@@ -116,7 +135,9 @@
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="5sp
-                "/>
+                "
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
         </LinearLayout>
 
@@ -125,28 +146,33 @@
             android:layout_height="match_parent"
             android:weightSum="150"
             android:id="@+id/linearLayout"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
 
 
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="323dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Quel est selon vous la définition du Developpement Durable ?"
                     android:id="@+id/textView13"
                     android:background="#dddddd"
-                    android:layout_weight="149"
                     android:layout_marginTop="5dp" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/group2">
+                    android:id="@+id/group2"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp">
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -179,7 +205,9 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -188,7 +216,9 @@
                 android:text="Quels sont les pilliers du Developpement Durable ?"
                 android:id="@+id/textView14"
                 android:background="#dddddd"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
             <CheckBox
                 android:layout_width="fill_parent"
@@ -196,7 +226,9 @@
                 android:text="Ecologique"
                 android:id="@+id/quest3answ1"
                 android:checked="false"
-                android:layout_marginTop="3dp" />
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
             <CheckBox
                 android:layout_width="fill_parent"
@@ -204,7 +236,9 @@
                 android:text="Philosophique"
                 android:id="@+id/quest3answ2"
                 android:checked="false"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
             <CheckBox
                 android:layout_width="fill_parent"
@@ -212,7 +246,9 @@
                 android:text="Social"
                 android:id="@+id/quest3answ3"
                 android:checked="false"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
             <CheckBox
                 android:layout_width="fill_parent"
@@ -220,14 +256,18 @@
                 android:text="Economique"
                 android:id="@+id/quest3answ4"
                 android:checked="false"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -236,12 +276,16 @@
                 android:text="Selon vous, quel est la quantité de déchets en France par an et par habitant ?"
                 android:id="@+id/textView15"
                 android:background="#dddddd"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/groupe4">
+                android:id="@+id/groupe4"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -249,7 +293,9 @@
                     android:text="1 tonne"
                     android:id="@+id/quest4answ1"
                     android:checked="false"
-                    android:layout_marginTop="3dp" />
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -257,7 +303,9 @@
                     android:text="9,5 tonnes"
                     android:id="@+id/quest4answ2"
                     android:checked="false"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -265,14 +313,18 @@
                     android:text="13,8 tonnes"
                     android:id="@+id/quest4answ3"
                     android:checked="false"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -281,12 +333,16 @@
                 android:text="Quel est le pourcentage de femmes au Conseil d&apos;Administration dans les PME ?"
                 android:id="@+id/textView16"
                 android:background="#dddddd"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/groupe5">
+                android:id="@+id/groupe5"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -294,7 +350,9 @@
                     android:text="20 %"
                     android:id="@+id/quest5answ1"
                     android:checked="false"
-                    android:layout_marginTop="3dp" />
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -302,7 +360,9 @@
                     android:text="40 %"
                     android:id="@+id/quest5answ2"
                     android:checked="false"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -310,14 +370,18 @@
                     android:text="55 %"
                     android:id="@+id/quest5answ3"
                     android:checked="false"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -326,12 +390,16 @@
                 android:text="Quelle est la part de la production nucléaire dans l&apos;énergie française ?"
                 android:id="@+id/textView17"
                 android:background="#dddddd"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/groupe6">
+                android:id="@+id/groupe6"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp">
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -339,7 +407,9 @@
                     android:text="40 %"
                     android:id="@+id/quest6answ1"
                     android:checked="false"
-                    android:layout_marginTop="3dp" />
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -347,7 +417,9 @@
                     android:text="63 %"
                     android:id="@+id/quest6answ2"
                     android:checked="false"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -355,7 +427,9 @@
                     android:text="77 %"
                     android:id="@+id/quest6answ3"
                     android:checked="false"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp" />
             </RadioGroup>
         </LinearLayout>
 
@@ -368,7 +442,9 @@
             android:textAlignment="center"
             android:clickable="true"
             android:onClick="sendMessage"
-            />
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_margin="20sp" />
 
 
     </LinearLayout>

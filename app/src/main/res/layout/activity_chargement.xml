@@ -2,15 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#d1caca"
-    android:gravity="center|center_vertical|center_horizontal"
-    android:orientation="vertical"
+    android:background="#7DDEFF"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:weightSum="1"
-    tools:context=".Chargement">
+    tools:context=".Chargement"
+    android:baselineAligned="false"
+    android:id="@+id/Linear"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
 
 
     <TextView
@@ -81,8 +83,10 @@
         android:layout_alignParentEnd="false"
         android:layout_alignParentStart="false"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
-        android:text="OneIdeaADay - v0.1"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:text="OneIdeaADay - v1.0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="center_horizontal|bottom"
+        android:autoText="false"
+        android:gravity="center_horizontal|bottom" />
 
 </LinearLayout>

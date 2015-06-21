@@ -9,7 +9,9 @@
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:orientation="vertical"
-                  android:weightSum="1">
+                  android:weightSum="1"
+        android:focusable="true"
+        android:background="#ffe7ecff">
 
         <TextView
             android:id="@+id/textView9"
@@ -18,18 +20,18 @@
             android:layout_gravity="center_horizontal"
             android:text="L'eau, c'est cool."
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginTop="20sp" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="
-          Réduisez le temps consacré à votre douche d’environ 2 minutes ! Presque vingt litres en moins pour un meme effet.
-          "
+            android:text="Réduisez le temps consacré à votre douche d’environ 2 minutes ! Presque vingt litres en moins pour un meme effet."
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_gravity="left"
-            android:textStyle="italic"/>
+            android:textStyle="italic"
+            android:layout_margin="20sp" />
 
         <ImageView
             android:layout_width="250dp"
@@ -38,7 +40,7 @@
             android:layout_gravity="center_horizontal"
             android:contentDescription="Image en lien avec le Fact"
             android:src="@drawable/shower"
-            />
+            android:layout_margin="20sp" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -47,7 +49,10 @@
             android:layout_gravity="center_horizontal"
             android:clickable="true"
             android:src="@drawable/done"
-            android:onClick=""/>
+            android:onClick=""
+            android:layout_margin="20sp"
+            android:adjustViewBounds="true"
+            android:background="#ffb6b5ff" />
 
 
     </LinearLayout></ScrollView>

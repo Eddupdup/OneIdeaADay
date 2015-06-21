@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Un clavier en braille"
+            android:text="@string/title_fact_2"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold"
             android:layout_marginTop="20sp" />

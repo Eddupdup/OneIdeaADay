@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
-        android:text="Presentation"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:layout_width="151dp"
-        android:layout_height="wrap_content"
-        android:text="Skip"
-        android:id="@+id/button2"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:clickable="true"
-        android:onClick="sendMessage"
-        />
-</RelativeLayout>
+    android:layout_height="match_parent" />

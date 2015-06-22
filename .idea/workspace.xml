@@ -52,7 +52,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a243330e-a60a-4d35-b7bc-530260ceb1a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_resultats.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_resultats.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fact_4.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fact_4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fact_5.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fact_5.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -168,7 +168,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_resultats.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fact_4.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fact_4.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1343">
+              <caret line="29" column="168" selection-start-line="29" selection-start-column="168" selection-end-line="29" selection-end-column="168" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_resultats.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_resultats.xml">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3060">
@@ -1693,8 +1706,9 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/questionnaire.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/slide4.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fact_5.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_resultats.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fact_5.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fact_4.xml" />
       </list>
     </option>
   </component>
@@ -2273,7 +2287,11 @@
       <created>1434973462477</created>
       <updated>1434973462477</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Aubin : couleurs résultats">
+      <created>1434974858187</created>
+      <updated>1434974858187</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2338,7 +2356,8 @@
     <MESSAGE value="Aubin : alignement questionnaire + slide 4..." />
     <MESSAGE value="Aubin : couleur questionnaire" />
     <MESSAGE value="Aubin : couleur questionnaire et slide 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aubin : couleur questionnaire et slide 4" />
+    <MESSAGE value="Aubin : couleurs résultats" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aubin : couleurs résultats" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2621,16 +2640,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fact_4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40625" vertical-offset="0" max-vertical-offset="0">
-          <caret line="29" column="168" selection-start-line="29" selection-start-column="168" selection-end-line="29" selection-end-column="168" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/oneideaaday/oneideaaday/Fact_4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4297408" vertical-offset="0" max-vertical-offset="0">
@@ -2752,6 +2761,17 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_resultats.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2924">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fact_5.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
@@ -2763,10 +2783,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_resultats.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fact_4.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2924">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1343">
+          <caret line="29" column="168" selection-start-line="29" selection-start-column="168" selection-end-line="29" selection-end-column="168" />
           <folding />
         </state>
       </provider>

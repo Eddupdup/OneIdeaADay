@@ -45,9 +45,15 @@ public class Chargement extends ActionBarActivity {
             @Override
             public void onFinish() {
                 final SharedPreferences pref = getSharedPreferences("PREF",0);
-                boolean used =pref.getBoolean("used",false);
-                if (used==false) {
+                boolean used =pref.getBoolean("used", false);
+                boolean questionned = pref.getBoolean("questionned",false);
+                if ((used==false)&&(questionned==false)) {
                     Intent intent = new Intent(Chargement.this, Presentation.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if ((used==true)&&(questionned==false)) {
+                    Intent intent = new Intent(Chargement.this,Questionnaire.class);
                     startActivity(intent);
                     finish();
                 }

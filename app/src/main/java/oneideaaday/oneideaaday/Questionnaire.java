@@ -108,7 +108,7 @@ public class Questionnaire extends Activity {
         }
         xp = pref.getInt("xp",0);
         leveledup(answers);
-        editor.putBoolean("used", true)
+        editor.putBoolean("questionned", true)
                 .apply();;
 
 

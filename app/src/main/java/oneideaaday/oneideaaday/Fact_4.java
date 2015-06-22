@@ -27,7 +27,7 @@ public class Fact_4 extends Fragment {
         final Button button = (Button) rootview.findViewById(R.id.button1);
         //final Button buttonfav = (Button) rootview.findViewById(R.id.buttonfav);
         button.setClickable(true);
-        final boolean xpdelivered = pref.getBoolean("fact44delivered",false);
+        final boolean xpdelivered = pref.getBoolean("fact4delivered",false);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +42,7 @@ public class Fact_4 extends Fragment {
                         ((MyActivity)getActivity()).leveledup();
                     }
                     //((Myapp) getActivity().getApplication()).setfact1delivered(true);
-                    editor.putBoolean("fact1delivered",true)
+                    editor.putBoolean("fact4delivered",true)
                             .apply();
                     button.setClickable(false);
                 }

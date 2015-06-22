@@ -54,8 +54,7 @@
                 android:autoText="false"
                 android:textSize="20sp"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp" />
+                android:layout_marginRight="0sp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
@@ -63,8 +62,8 @@
                 android:singleLine="true"
                 android:elegantTextHeight="false"
                 android:autoText="true"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp" />
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="10sp" />
 
 
         </LinearLayout>
@@ -77,19 +76,18 @@
             android:layout_below="@+id/textView2"
             android:layout_alignParentStart="true"
             android:orientation="vertical"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp">
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Comment avez vous découvert cette application ?"
                 android:background="#ffffcdbe"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp"
+                android:layout_marginLeft="5sp"
                 android:autoText="false" />
 
             <LinearLayout
@@ -149,8 +147,8 @@
             android:weightSum="150"
             android:id="@+id/linearLayout"
             android:orientation="vertical"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp">
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
 
 
             <LinearLayout
@@ -161,7 +159,7 @@
                 android:layout_marginRight="20sp">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="338dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Quel est selon vous la définition du Developpement Durable ?"
@@ -190,7 +188,7 @@
 
                     <RadioButton
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50sp"
                         android:text="Developpement des technologies visants à préserver l&apos;écologie de notre environnement"
                         android:id="@+id/quest2answ2"
                         android:checked="false"
@@ -209,8 +207,8 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp">
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -278,8 +276,8 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp">
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -336,8 +334,8 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp">
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -394,8 +392,8 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp">
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
 
             <TextView
                 android:layout_width="wrap_content"

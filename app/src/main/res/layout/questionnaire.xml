@@ -151,22 +151,23 @@
             android:layout_marginRight="10sp">
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Quelle est selon vous la définition du Développement Durable ?"
+                android:id="@+id/textView13"
+                android:background="#ffffcdbe"
+                android:layout_marginTop="5dp"
+                android:autoText="false"
+                android:layout_marginLeft="5sp" />
+
             <LinearLayout
-                android:layout_width="323dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginLeft="20sp"
                 android:layout_marginRight="20sp">
-
-                <TextView
-                    android:layout_width="338dp"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Quel est selon vous la définition du Developpement Durable ?"
-                    android:id="@+id/textView13"
-                    android:background="#ffffcdbe"
-                    android:layout_marginTop="5dp"
-                    android:autoText="false" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -178,7 +179,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Developpement qui répond aux besoins du présent sans compromettre la capacité des générations futurs à répondre aux leurs"
+                        android:text="Developpement qui répond aux besoins du présent sans compromettre la capacité des générations futures à répondre aux leurs"
                         android:id="@+id/quest2answ1"
                         android:layout_weight="149"
                         android:layout_below="@+id/linearLayout"
@@ -214,12 +215,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Quels sont les pilliers du Developpement Durable ?"
+                android:text="Quels sont les piliers du Développement Durable ?"
                 android:id="@+id/textView14"
                 android:background="#ffffcdbe"
                 android:layout_marginTop="8dp"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp"
+                android:layout_marginLeft="5sp"
                 android:autoText="false" />
 
             <LinearLayout
@@ -283,12 +283,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Selon vous, quel est la quantité de déchets en France par an et par habitant ?"
+                android:text="Selon vous, quelle est la quantité de déchets en France par an et par habitant ?"
                 android:id="@+id/textView15"
                 android:background="#ffffcdbe"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp"
+                android:layout_marginLeft="5sp"
                 android:autoText="false" />
 
             <RadioGroup
@@ -345,8 +344,7 @@
                 android:id="@+id/textView16"
                 android:background="#ffffcdbe"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp"
+                android:layout_marginLeft="5sp"
                 android:autoText="false" />
 
             <RadioGroup
@@ -403,8 +401,7 @@
                 android:id="@+id/textView17"
                 android:background="#ffffcdbe"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="20sp"
-                android:layout_marginRight="20sp"
+                android:layout_marginLeft="5sp"
                 android:autoText="false" />
 
             <RadioGroup

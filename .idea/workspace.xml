@@ -51,18 +51,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: oneideaaday.oneideaaday" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a243330e-a60a-4d35-b7bc-530260ceb1a1" name="Default" comment="V1.0 apps">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/oneideaaday/oneideaaday/Questionnaire.java" afterPath="$PROJECT_DIR$/app/src/main/java/oneideaaday/oneideaaday/Questionnaire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/libraries/android-support-v4-preferencefragment-master/android-support-v4-preferencefragment-master.iml" afterPath="$PROJECT_DIR$/test/libraries/android-support-v4-preferencefragment-master/android-support-v4-preferencefragment-master.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/libraries/libraries.iml" afterPath="$PROJECT_DIR$/test/libraries/libraries.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/settings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.iml" afterPath="$PROJECT_DIR$/test/test.iml" />
+    <list default="true" id="a243330e-a60a-4d35-b7bc-530260ceb1a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneIdeaADay.iws" />
@@ -159,7 +148,7 @@
       <file leaf-file-name="Questionnaire.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/oneideaaday/oneideaaday/Questionnaire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09189189">
+            <state vertical-scroll-proportion="2.2513514">
               <caret line="152" column="137" selection-start-line="152" selection-start-column="137" selection-end-line="152" selection-end-column="137" />
               <folding />
             </state>
@@ -2029,7 +2018,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434964092826</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="V1.0 apps">
+      <created>1434967666128</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1434967666128</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2522,7 +2517,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/oneideaaday/oneideaaday/Questionnaire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09189189">
+        <state vertical-scroll-proportion="2.2513514">
           <caret line="152" column="137" selection-start-line="152" selection-start-column="137" selection-end-line="152" selection-end-column="137" />
           <folding />
         </state>

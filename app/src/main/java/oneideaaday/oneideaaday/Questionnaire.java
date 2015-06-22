@@ -150,7 +150,7 @@ public class Questionnaire extends Activity {
         }
         int Level = pref.getInt("level",1);
         alertdialog.setTitle("Résultats")
-                .setMessage("Texte à remplir") // +" "+ xp+" " + xpmax)
+                .setMessage("Maintenant que vous avez répondu au questionnaire, vous allez pourvoir profiter pleinement de l'application ! Allez voir votre niveau de départ dans votre profil. ") // +" "+ xp+" " + xpmax)
                 .setPositiveButton("Suivant", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

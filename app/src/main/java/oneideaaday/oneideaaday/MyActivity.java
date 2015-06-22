@@ -132,12 +132,15 @@ public class MyActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_fact_4);
                 break;
             case 5:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.title_fact_5);
                 break;
             case 6:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.title_section1);
                 break;
             case 7:
+                mTitle = getString(R.string.title_section2);
+                break;
+            case 8:
                 mTitle = getString(R.string.title_section3);
         }
     }

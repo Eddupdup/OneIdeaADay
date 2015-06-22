@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
-        android:focusable="true">
+        android:focusable="true"
+        android:background="#ffd7e5ff">
 
         <TextView
             android:layout_width="fill_parent"
@@ -44,7 +45,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
-            android:layout_margin="10sp" />
+            android:layout_margin="10sp"
+            android:textColor="#ff478d2c" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -65,7 +67,8 @@
             android:id="@+id/textView28"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_margin="10sp" />
+            android:layout_margin="10sp"
+            android:textColor="#ff478d2c" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -74,7 +77,8 @@
             android:text="Ecologique"
             android:id="@+id/textView29"
             android:layout_marginLeft="5dp"
-            android:layout_margin="10sp" />
+            android:layout_margin="10sp"
+            android:textColor="#ff478d2c" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -83,7 +87,8 @@
             android:text="Economique"
             android:id="@+id/textView30"
             android:layout_marginLeft="5dp"
-            android:layout_margin="10sp" />
+            android:layout_margin="10sp"
+            android:textColor="#ff478d2c" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -104,7 +109,8 @@
             android:id="@+id/textView22"
             android:gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:layout_margin="10sp" />
+            android:layout_margin="10sp"
+            android:textColor="#ff478d2c" />
 
         <TextView
             android:layout_width="fill_parent"
@@ -126,7 +132,8 @@
             android:id="@+id/textView24"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:layout_margin="10sp" />
+            android:layout_margin="10sp"
+            android:textColor="#ff478d2c" />
 
         <TextView
             android:layout_width="fill_parent"
@@ -148,7 +155,8 @@
             android:id="@+id/textView26"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:layout_margin="10sp" />
+            android:layout_margin="10sp"
+            android:textColor="#ff478d2c" />
 
         <Button
             android:layout_width="150sp"
@@ -157,7 +165,7 @@
             android:id="@+id/button"
             android:layout_gravity="center_horizontal|bottom"
             android:layout_marginTop="30sp"
-            android:background="#89c95a"
+            android:background="#ffb6b5ff"
             android:clickable="true"
             android:onClick="onclickButton"
             android:layout_margin="10sp" />

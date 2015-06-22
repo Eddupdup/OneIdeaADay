@@ -27,7 +27,7 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entrepise lancée depuis 2009, BIRDEO aide les entreprises à la recherche de profils interessants pour dynamiser leur RSE ou leur implication dans le développement durable! Pour en découvrir plus, cliquez sur le lien en-dessous.   "
+        android:text="Entreprise lancée en 2009, BIRDEO aide les entreprises à la recherche de profils intéressants pour dynamiser leur RSE ou à leur implication dans le développement durable ! Pour en découvrir plus, cliquez sur le lien en-dessous."
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_gravity="left"
         android:textStyle="italic"

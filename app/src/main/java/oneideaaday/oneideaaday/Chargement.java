@@ -52,13 +52,18 @@ public class Chargement extends ActionBarActivity {
                     startActivity(intent);
                     finish();
                 }
-                else if ((used==true)&&(questionned==false)) {
+                if ((used==true)&&(questionned==false)) {
                     Intent intent = new Intent(Chargement.this,Questionnaire.class);
                     startActivity(intent);
                     finish();
                 }
-                else {
+                if ((used==true)&&(questionned==true)){
                     Intent intent = new Intent(Chargement.this,MyActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                if ((used==false)&&(questionned==true)){
+                    Intent intent = new Intent(Chargement.this,Presentation.class);
                     startActivity(intent);
                     finish();
                 }

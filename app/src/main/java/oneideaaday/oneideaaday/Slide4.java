@@ -21,26 +21,25 @@ public class Slide4 extends Fragment {
         Button buttonSkip = (Button) rootView.findViewById(R.id.button9);
         final SharedPreferences pref = ((Presentation)getActivity()).getSharedPreferences("PREF",0);
         final SharedPreferences.Editor editor = pref.edit();
-        final boolean questionned = pref.getBoolean("questionned",false);
         final Intent intent1 = new Intent((Presentation)getActivity(),Questionnaire.class);
         final Intent intent2 = new Intent((Presentation)getActivity(),MyActivity.class);
         buttonAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (questionned==false) {
-                    startActivity(intent1);}
-                    editor.putBoolean("used",true)
-                            .apply();
+                startActivity(intent1);
+                editor.putBoolean("used", true)
+                        .putBoolean("questionned",false)
+                        .apply();
             }
         });
         buttonSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (questionned==true){
-                    startActivity(intent2);
-                    editor.putBoolean("used",true)
-                            .apply();
-                }
+                startActivity(intent2);
+                editor.putBoolean("used",true)
+                        .putBoolean("questionned",false)
+                        .apply();
+
             }
         });
         return rootView;

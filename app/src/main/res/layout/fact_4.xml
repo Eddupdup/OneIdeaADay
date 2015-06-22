@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Le transport à la voile"
+        android:text="Transport à la voile"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
         android:layout_marginTop="20sp" />
@@ -27,7 +27,7 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Transporter des marchandises à la voile c'est possible. TOWT, jeune start-up bestoise a pris le paris de lancer la marquer: transporter à la voile dans le but de promouvoir les produits déplacés par la seule force du vent. Découvrez ce projet via le lien en-dessous !  "
+        android:text="Transporter des marchandises à la voile c'est possible. TOWT, jeune start-up bestoise, a pris le pari de lancer la marque : <<transporter à la voile>> dans le but de promouvoir les produits déplacés par la seule force du vent. Découvrez ce projet via le lien en-dessous !  "
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_gravity="left"
         android:textStyle="italic"
@@ -55,7 +55,7 @@
         <Button
             android:layout_width="151dp"
             android:layout_height="wrap_content"
-            android:text="LIEN VERS L&apos;VIDEO"
+            android:text="LIEN VERS LA VIDEO"
             android:id="@+id/button1"
             android:layout_gravity="left"
             android:layout_weight="0.05"

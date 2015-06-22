@@ -7,6 +7,9 @@ import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 public class Chargement extends ActionBarActivity {
@@ -15,12 +18,16 @@ public class Chargement extends ActionBarActivity {
     public static final int milseconde = seconde * 1000;
     public static final int delay = 2;
     private ProgressBar MyBar;
+    ImageView imageView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chargement);
+        imageView = (ImageView) findViewById(R.id.imageView);
+        final Animation animation = AnimationUtils.loadAnimation(this,R.anim.rotate);
+        imageView.startAnimation(animation );
         MyBar = (ProgressBar) findViewById(R.id.MyBar);
         MyBar.setMax(max_progress());
         beginanimate();

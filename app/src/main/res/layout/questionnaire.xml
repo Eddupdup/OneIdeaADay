@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:visibility="visible"
-        android:background="#ffffdec7">
+        android:background="#ffd2d0ff">
 
         <TextView
             android:id="@+id/textView2"
@@ -41,8 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp">
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
 
             <TextView
                 android:id="@+id/username"
@@ -50,11 +50,12 @@
                 android:layout_height="fill_parent"
                 android:text="Votre Identifiant :"
                 android:inputType="text"
-                android:background="#ffffcdbe"
+                android:background="#ffc1bdff"
                 android:autoText="false"
                 android:textSize="20sp"
                 android:gravity="center_vertical"
-                android:layout_marginRight="0sp" />
+                android:layout_marginRight="0sp"
+                android:layout_marginLeft="5sp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
@@ -62,8 +63,7 @@
                 android:singleLine="true"
                 android:elegantTextHeight="false"
                 android:autoText="true"
-                android:layout_marginLeft="3sp"
-                android:layout_marginRight="10sp" />
+                android:layout_marginLeft="3sp" />
 
 
         </LinearLayout>
@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Comment avez vous découvert cette application ?"
-                android:background="#ffffcdbe"
+                android:background="#ffc1bdff"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="5sp"
                 android:autoText="false" />
@@ -157,7 +157,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Quelle est selon vous la définition du Développement Durable ?"
                 android:id="@+id/textView13"
-                android:background="#ffffcdbe"
+                android:background="#ffc1bdff"
                 android:layout_marginTop="5dp"
                 android:autoText="false"
                 android:layout_marginLeft="5sp" />
@@ -217,7 +217,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Quels sont les piliers du Développement Durable ?"
                 android:id="@+id/textView14"
-                android:background="#ffffcdbe"
+                android:background="#ffc1bdff"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="5sp"
                 android:autoText="false" />
@@ -285,7 +285,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Selon vous, quelle est la quantité de déchets en France par an et par habitant ?"
                 android:id="@+id/textView15"
-                android:background="#ffffcdbe"
+                android:background="#ffc1bdff"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5sp"
                 android:autoText="false" />
@@ -342,7 +342,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Quel est le pourcentage de femmes au Conseil d&apos;Administration dans les PME ?"
                 android:id="@+id/textView16"
-                android:background="#ffffcdbe"
+                android:background="#ffc1bdff"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5sp"
                 android:autoText="false" />
@@ -399,7 +399,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Quelle est la part de la production nucléaire dans l&apos;énergie française ?"
                 android:id="@+id/textView17"
-                android:background="#ffffcdbe"
+                android:background="#ffc1bdff"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5sp"
                 android:autoText="false" />
